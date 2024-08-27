@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--HEAD/STYLE-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Email</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--HEADER-->
+    <div class="container">
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="https://github.com/aaxxn" target="_blank">GitHub</a>
+        </nav>
+        <!--EMAIL GENERATOR-->
+        <div class="wrapper">
+          <h1>Generator Email</h1>
+            <div class="input-box">
+                <input type="text" id="generatedEmail" readonly>
+            </div>
+            <div class="email-length">
+                <label for="lengthSlider">Panjang Username</label>
+                <input type="range" id="lengthSlider" min="5" max="20" value="10">
+                <span id="lengthValue">10</span>
+            </div>
+            <div class="email-settings">
+                <p>Pengaturan Email</p>
+                <div class="options">
+                    <label><input type="checkbox" id="useLowercase" checked> Huruf Kecil (a-z)</label>
+                    <label><input type="checkbox" id="useUppercase"> Huruf Besar (A-Z)</label>
+                    <label><input type="checkbox" id="useNumbers"> Angka (0-9)</label>
+                    <label><input type="checkbox" id="useSpecialChars"> Simbol (!@#$%&*())</label>
+                </div>
+            </div>
+            <button id="generateButton" class="generate-btn">BUAT EMAIL</button>
+        </div>
+        <!--FOOTER-->
+        <footer>
+            <p>&copy; 2024 <a href="https://github.com/aaxxn">Generator Email. </a> All rights reserved</p>
+        </footer>
+    </div>
+    <!--SCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>

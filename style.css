@@ -1,0 +1,197 @@
+/* --RESPONSIVE -- */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* --GLOBAL STYLES-- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* --BODY STYLES-- */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+    padding: 20px;
+}
+/* --CONTAINER STYLES-- */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #000000;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* --NAVIGATION STYLES-- */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* --HEADING STYLES-- */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --WRAPPER STYLES-- */
+.wrapper {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    color: #000000;
+}
+
+/* --CHECKBOX STYLES-- */
+input[type="checkbox"] {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  width: 16px; 
+  height: 16px; 
+  border: 2px solid #000; 
+  background-color: #fff; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: #000; 
+  color: #fff; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: #fff;
+  font-size: 14px;
+}
+
+/* --RANGE SLIDER STYLES-- */
+input[type="range"] {
+  -webkit-appearance: none; 
+  width: 100%;
+  height: 8px;
+  background: #bdbdbd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 16px;
+  height: 16px;
+  background: #b3b3b3;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* --INPUT BOX STYLES-- */
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* --EMAIL LENGTH STYLES-- */
+.email-length {
+    margin: 20px 0;
+}
+
+.email-length label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.email-length input[type="range"] {
+    width: 100%;
+}
+
+/* --EMAIL SETTINGS STYLES-- */
+.email-settings p {
+    margin-bottom: 10px;
+}
+
+/* --OPTIONS STYLES-- */
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* --GENERATE BUTTON STYLES-- */
+.generate-btn {
+  width: 100%;
+  padding: 10px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* --FOOTER STYLES-- */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+/* --RESPONSIVE -- */
+@media (max-width: 480px) {
+    .options {
+        grid-template-columns: 1fr;
+    }
+}
